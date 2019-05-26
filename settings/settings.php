@@ -1,3 +1,4 @@
+<?php
 /*
 SocialMeet - Web Based Social Network
 
@@ -7,15 +8,15 @@ Bu program özgür yazılımdır: Özgür Yazılım Vakfı tarafından yayımlan
 
 Bu program, yararlı olması umuduyla dağıtılmış olup, programın BİR TEMİNATI YOKTUR; TİCARETİNİN YAPILABİLİRLİĞİNE VE ÖZEL BİR AMAÇ İÇİN UYGUNLUĞUNA dair bir teminat da vermez. Ayrıntılar için GNU Genel Kamu Lisansı’na göz atınız.
 
-Bu programla birlikte GNU Genel Kamu Lisansı’nın bir kopyasını elde etmiş olmanız gerekir. Eğer elinize ulaşmadıysa <http://www.gnu.org/licenses/> adresine bakınız. 
+Bu programla birlikte GNU Genel Kamu Lisansı’nın bir kopyasını elde etmiş olmanız gerekir. Eğer elinize ulaşmadıysa <http://www.gnu.org/licenses/> adresine bakınız.
 */
 
-.navbar {
-    background-color: rgb(226, 226, 226);
-}
+//Loading BasicDB Class
+require "$rootdir/php-class/BasicDB.php";
 
-.nav-item:hover {
-    transition: all 0.5s;
-    background-color: rgb(182, 182, 182);
-    color: white;
-}
+//Loading MySQL
+include "$rootdir/settings/mysql.php";
+
+//Loading Language
+include "$rootdir/settings/language.php";
+?>
